@@ -1,0 +1,28 @@
+{
+    "plan": [
+        {
+            "name": "go_to",
+            "args": {
+                "waypoint_id": 1
+            }
+        },
+        {
+            "name": "pick_up",
+            "args": {
+                "box_id": 998
+            }
+        },
+        {
+            "name": "go_to",
+            "args": {
+                "waypoint_id": 2
+            }
+        },
+        {
+            "name": "drop",
+            "args": {
+                "shelf_id": 4
+            }
+        }
+    ]
+}

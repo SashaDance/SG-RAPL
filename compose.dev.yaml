@@ -1,0 +1,25 @@
+services:
+
+  llm_vicuna13b:
+    volumes:
+      - ./services/llm_vicuna13b:/app
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+
+  planner:
+    volumes:
+      - ./services/planner:/app
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+
+  actual_state:
+    volumes:
+      - ./services/actual_state:/app
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+
+  seg_and_track:
+    volumes:
+      - ./services/seg_and_track:/app
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1

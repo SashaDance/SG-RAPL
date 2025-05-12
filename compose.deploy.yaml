@@ -1,0 +1,12 @@
+services:
+  llm_vicuna13b:
+    ports:
+      - 8002:8000
+
+  planner:
+    ports:
+      - 8003:8000
+
+  seg_and_track:
+    ports:
+      - 8008:8000

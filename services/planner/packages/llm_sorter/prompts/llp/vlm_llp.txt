@@ -1,0 +1,36 @@
+A chat between a curious human and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the human's questions.
+USER:  Imagine, you are a robot operating in a warehouse. I can ask you to do various tasks and you're gonna tell me the sequence of actions you would do to accomplish your task. ```
+```
+GO_TO(object), // go to an object's location
+PICK_UP(box_id), // pick up a box with box_id written on it
+DROP(place_id), // place the box to a place with place_id
+STOP(stop) // complete end of all actions
+```
+If you get it, reply with the message "Waiting for next input." Understood? 
+ASSISTANT: Understood. Waiting for next input.
+</s> USER: How would you replace a box 1 from the shelf 2 to the shelf 3?
+ASSISTANT: 1. GO_TO("shelf 2"),
+2. PICK_UP("box 1"),
+3. GO_TO("shelf 3"),
+4. DROP("shelf 3"),
+9. STOP("stop")
+</s>USER: How would you move a box 5 from shelf 4 to shelf 1?
+ASSISTANT: 1. GO_TO("shelf 4")
+2. PICK_UP("box 5")
+3. GO_TO("shelf 1")
+4. DROP("shelf 1")
+5. STOP("stop")
+</s>USER: How would you put box 303 from order delivery table on shelf 2?
+ASSISTANT: 1. GO_TO("order delivery table")
+2. PICK_UP("box 303")
+3. GO_TO("shelf 2")
+4. DROP("shelf 2")
+5. STOP("stop")
+</s>USER: How would you put box 303 on shelf 2?
+ASSISTANT: 1. GO_TO("shelf 2")
+2. DROP("shelf 2")
+3. STOP("stop")
+</s>USER: How would you take  box 5 from shelf 4?
+ASSISTANT: 1. GO_TO("shelf 4")
+2. PICK_UP("box 5")
+3. STOP("stop")

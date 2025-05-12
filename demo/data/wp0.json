@@ -1,0 +1,249 @@
+{
+    "count_box_and_containers": 4,
+    "scores": [
+        0.912,
+        0.881,
+        0.88,
+        0.876
+    ],
+    "classes_ids": [
+        2,
+        1,
+        1,
+        2
+    ],
+    "tracking_ids": [
+        998,
+        1,
+        990,
+        313
+    ],
+    "boxes": [
+        {
+            "x_min": 260,
+            "y_min": 363,
+            "x_max": 402,
+            "y_max": 470
+        },
+        {
+            "x_min": 1132,
+            "y_min": 549,
+            "x_max": 1294,
+            "y_max": 706
+        },
+        {
+            "x_min": 675,
+            "y_min": 351,
+            "x_max": 816,
+            "y_max": 425
+        },
+        {
+            "x_min": 431,
+            "y_min": 377,
+            "x_max": 535,
+            "y_max": 447
+        }
+    ],
+    "poses": [
+        {
+            "rvec": [
+                [
+                    -2.636,
+                    0.217,
+                    -1.21
+                ]
+            ],
+            "tvec": [
+                [
+                    -0.703,
+                    -0.28,
+                    0.857
+                ]
+            ]
+        },
+        {
+            "rvec": [
+                [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ],
+            "tvec": [
+                [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "rvec": [
+                [
+                    -2.653,
+                    0.067,
+                    -0.725
+                ]
+            ],
+            "tvec": [
+                [
+                    0.122,
+                    -0.484,
+                    1.543
+                ]
+            ]
+        },
+        {
+            "rvec": [
+                [
+                    -2.787,
+                    0.084,
+                    -0.699
+                ]
+            ],
+            "tvec": [
+                [
+                    -0.472,
+                    -0.318,
+                    1.064
+                ]
+            ]
+        }
+    ],
+    "box_on_box": false,
+    "man_in_frame": true,
+    "box_container_on_floor": true,
+    "box_or_container_in_frame": true,
+    "right_size_flags": false,
+    "boxes_output": [
+        {
+            "box_id": 998,
+            "placed_on_shelf_with_id": 1
+        },
+        {
+            "box_id": 0,
+            "placed_on_shelf_with_id": -1
+        },
+        {
+            "box_id": 990,
+            "placed_on_shelf_with_id": 3
+        },
+        {
+            "box_id": 313,
+            "placed_on_shelf_with_id": 2
+        }
+    ],
+    "shelves": [
+        {
+            "shelf_id": 3,
+            "x": 0.107,
+            "y": -0.297,
+            "occupied_by_box_with_id": 990,
+            "pose": {
+                "rvec": [
+                    [
+                        -2.759,
+                        0.178,
+                        -0.921
+                    ]
+                ],
+                "tvec": [
+                    [
+                        0.107,
+                        -0.297,
+                        1.569
+                    ]
+                ]
+            }
+        },
+        {
+            "shelf_id": 4,
+            "x": 0.378,
+            "y": -0.357,
+            "occupied_by_box_with_id": -1,
+            "pose": {
+                "rvec": [
+                    [
+                        3.188,
+                        -0.221,
+                        1.085
+                    ]
+                ],
+                "tvec": [
+                    [
+                        0.378,
+                        -0.357,
+                        1.756
+                    ]
+                ]
+            }
+        },
+        {
+            "shelf_id": 1,
+            "x": -0.698,
+            "y": -0.101,
+            "occupied_by_box_with_id": 998,
+            "pose": {
+                "rvec": [
+                    [
+                        -2.962,
+                        0.307,
+                        -0.998
+                    ]
+                ],
+                "tvec": [
+                    [
+                        -0.698,
+                        -0.101,
+                        0.92
+                    ]
+                ]
+            }
+        },
+        {
+            "shelf_id": 2,
+            "x": -0.427,
+            "y": -0.164,
+            "occupied_by_box_with_id": 313,
+            "pose": {
+                "rvec": [
+                    [
+                        -2.711,
+                        0.166,
+                        -0.919
+                    ]
+                ],
+                "tvec": [
+                    [
+                        -0.427,
+                        -0.164,
+                        1.126
+                    ]
+                ]
+            }
+        },
+        {
+            "shelf_id": 5,
+            "x": 0.878,
+            "y": -0.351,
+            "occupied_by_box_with_id": -1,
+            "pose": {
+                "rvec": [
+                    [
+                        -2.967,
+                        -0.106,
+                        -0.009
+                    ]
+                ],
+                "tvec": [
+                    [
+                        0.878,
+                        -0.351,
+                        1.754
+                    ]
+                ]
+            }
+        }
+    ],
+    "graph_box_on_box": null
+}

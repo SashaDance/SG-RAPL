@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "llm_vicuna13b"
+version = "0.1.0"
+description = ""
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = "^2.8.2"
+fastapi = {extras = ["standard"], version = "^0.112.0"}
+pytest = "^8.3.2"
+transformers = "^4.29.0"
+wandb = "^0.15.5"
+accelerate = "^0.21.0"
+sentencepiece = "^0.1.99"
+bitsandbytes = "^0.40.2"
+scipy = "^1.10.0"
+services-api = {path = "/common_packages/services_api", develop = true}
+typing_extensions = "^4.7.1"
+protobuf = "^3.20.3"
+fschat = "^0.2.30"
+flask = "^3.0.3"
+regex = "^2024.7.24"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

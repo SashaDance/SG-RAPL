@@ -1,0 +1,67 @@
+services:
+  llm_vicuna13b:
+    build:
+      context: .
+      dockerfile: services/llm_vicuna13b/Dockerfile
+    restart: always
+    volumes:
+      - $HOME/.cache/huggingface/hub/:/root/.cache/huggingface/hub/
+      - ./common_packages:/common_packages
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: [ '0' ]
+              capabilities: [ gpu ]
+    networks:
+      - assistant-network
+
+  planner:
+    build:
+      context: .
+      dockerfile: services/planner/Dockerfile
+    restart: always
+    volumes:
+      - ./common_packages:/common_packages
+    networks:
+      - assistant-network
+
+  actual_state:
+    build:
+      context: .
+      dockerfile: services/actual_state/Dockerfile
+    restart: always
+    volumes:
+      - ./common_packages:/common_packages
+    networks:
+      - assistant-network
+
+  seg_and_track:
+    build:
+      context: .
+      dockerfile: services/seg_and_track/Dockerfile
+    volumes:
+      - ./common_packages:/common_packages
+      - seg_and_track_data:/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: [ '1' ]
+              capabilities: [ gpu ]
+    networks:
+      - assistant-network
+
+networks:
+  assistant-network:
+    driver: bridge
+
+volumes:
+  seg_and_track_data:
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: volumes/seg_and_track

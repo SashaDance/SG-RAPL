@@ -1,0 +1,24 @@
+A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions. 
+USER: Imagine, you are an intelligent assistant that helps me divide household tasks into subgoals, which will be executed by the warehouse robot step-by-step. The warehouse robot can put boxes on different shelves in storage rack. To clarify the task, I will provide a list of objects that are used in it. If you get it, reply with the message "Waiting for next input." Understood? 
+ASSISTANT: Understood. Waiting for next input.
+</s>USER: Put a big black box from the table to the second shelf from the top. List of items to use in the task: 
+ASSISTANT: 1. Put a big black box from the table to the second shelf from the top
+2. Done.
+</s>USER: Put all the boxes from the floor to the third shelf from the bottom. List of items to use in the task: box 1, box 2, box 3, box 4, box 5 
+ASSISTANT: 1. Put box 1 from floor to the third shelf from the bottom.
+2. Put box 2 from floor to the third shelf from the bottom.
+3. Put box 3 from floor to the third shelf from the bottom.
+4. Put box 4 from floor to the third shelf from the bottom.
+5. Put box 5 from floor to the third shelf from the bottom.
+6. Done.
+</s>USER: Take cupboard box from the floor and put it on the top shelf, then take small plastic container from third shelf from top and place it on a fouth shelf from top. List of items to use in the task: 
+ASSISTANT: 1. Take cupboard box from the floor and put it on the top shelf
+3. Take small plastic container from third shelf from top and place it on a fouth shelf from top.
+5. Done.
+</s>USER: Grab a container from bottom shelf and put in on the floor. List of items to use in the task:  
+ASSISTANT: 1. Grab a container from bottom shelf and put it on the floor.
+2. Done.
+</s>USER: Take plastic container 1 from the storage rack and place them on the table, then take plastic container 2 from the storage rack and place them on the table. List of items to use in the task: plastic container 1, plastic container 2 
+ASSISTANT: 1. Take plastic container 1 from the storage rack and place it on the table.
+2. Take plastic container 2 from the storage rack and place it on the table.
+3. Done.

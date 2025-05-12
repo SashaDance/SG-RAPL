@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "r-d-ac_robotic_integration"
+version = "0.1.0"
+description = ""
+authors = ["Denis Kuznetsov <kunetsov.den.p@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+services-api = { path = "common_packages/services_api", develop = true }
+pytest = "^8.3.2"
+pydantic-settings = "^2.4.0"
+chatsky = "^0.8.0"
+assistant-common = { path = "services/assistant/packages/assistant_common", develop = true }
+voice-assistant-extensions = {path = "common_packages/voice_assistant_extensions", develop = true}
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

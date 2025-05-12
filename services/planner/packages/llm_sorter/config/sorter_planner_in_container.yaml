@@ -1,0 +1,52 @@
+logger: 
+  _target_: logging.getLogger
+  name: llm_sorter
+model:
+  name: docker vicuna
+  _target_: llm_sorter.models.api_model.APIModel
+  url: http://127.0.0.1:8080/
+gen_method:
+  _target_: llm_sorter.gen_methods.FullPlanGeneration
+  name: full generation
+hlp_processor:
+  _target_: llm_sorter.processors.HLPProcessor
+  name: hlp processor
+  run_name: ${model.name} ${gen_method.name} ${dataset.dataset_filename}
+  path_to_prompt_dir: /app/packages/llm_sorter/prompts/hlp
+  prompt_filename: warehouse_hlp.txt
+  load_prompt_from_file: true
+  n_examples: 4
+llp_processor:
+  _target_: llm_sorter.processors.LLPProcessor
+  name: llp processor
+  run_name: ${model.name} ${gen_method.name} ${dataset.dataset_filename}
+  path_to_prompt_dir: /app/packages/llm_sorter/prompts/llp
+  prompt_filename: vlm_llp.txt
+  load_prompt_from_file: true
+vc_processor:
+  _target_: llm_sorter.processors.ValidCheckProcessor
+  name: valid check processor
+  run_name: ${model.name} ${gen_method.name} ${dataset.dataset_filename}
+  path_to_prompt_dir: /app/packages/llm_sorter/prompts/valid_check
+  prompt_filename: valid_check_good copy.txt
+  load_prompt_from_file: true
+  n_examples: 10
+spec_processor:
+  _target_: llm_sorter.processors.SpecProcessor
+  name: spec processor
+  run_name: ${model.name} ${gen_method.name} ${dataset.dataset_filename}
+  path_to_prompt_dir: /app/packages/llm_sorter/prompts/spec
+  prompt_filename: spec_prompt.txt
+  load_prompt_from_file: true
+  n_examples: 10
+clean_room_processor:
+  _target_: llm_sorter.processors.CleanRoomProcessor
+  name: clean room processor
+  run_name: ${model.name} ${gen_method.name} ${dataset.dataset_filename}
+  path_to_prompt_dir: /app/packages/llm_sorter/prompts/clean_room
+  prompt_filename: clean_room.txt
+  load_prompt_from_file: true
+  n_examples: 2
+dataset:
+  _target_: ???
+  dataset_filename: sorter_planning
