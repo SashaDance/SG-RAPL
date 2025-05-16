@@ -12,9 +12,8 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
     Lazarev Aleksandr
     ·
     Panov Aleksandr
-    .
-    Kovalev Aleksei
     ·
+    Kovalev Aleksei
   </p>
 
   <h4 align="center"><a href="https://sashadance.github.io/SG-RAPL.github.io/">Project</a> | <a href="http://arxiv.org/abs/xxxx.xxxx">arXiv</a> | <a href="https://github.com/SashaDance/SG-RAPL">Code</a></h4>
