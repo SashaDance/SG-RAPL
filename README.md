@@ -21,7 +21,7 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
 </p>
 
 <p align="center">
-<img src="demo/paper_ga.pdf" width="80%">
+<img src="demo/paper_ga.png" width="80%">
 </p>
 
 # Launch 
