@@ -16,12 +16,12 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
     Kovalev Aleksei
   </p>
 
-  <h4 align="center"><a href="https://sashadance.github.io/SG-RAPL.github.io/">Project</a> | <a href="http://arxiv.org/abs/xxxx.xxxx">arXiv</a> | <a href="https://github.com/SashaDance/SG-RAPL">Code</a></h4>
+  <h4 align="center"><a href="https://sashadance.github.io/SG-RAPL.github.io/">Project</a> | <a href="https://github.com/SashaDance/SG-RAPL">Code</a></h4>
   <div align="center"></div>
 </p>
 
 <p align="center">
-<img src="smth.png" width="80%">
+<img src="demo/paper_ga.png" width="80%">
 </p>
 
 # Launch 
