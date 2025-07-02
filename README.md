@@ -5,11 +5,11 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
   <p align="center">
     Yudin Dmitry
     ·
-    Kochetkova Angelika
+    Lazarev Aleksandr
     .
     Bakaeva Eva
     <br>
-    Lazarev Aleksandr
+    Kochetkova Angelika
     ·
     Panov Aleksandr
     ·
@@ -24,12 +24,21 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
 <img src="demo/paper_ga.png" width="80%">
 </p>
 
+# Description
+
+This project is an open-source code base for our SG-RAPL project. [The paper is submited to Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence).
+
 # Dataset
 
 SG-RAPL Datset can be found [here](https://drive.google.com/file/d/1yCPMaw1ctYoEcuXvhehXRHbuXYjlrLqX/view?usp=sharing).
 
 # Launch 
 This project follows a microservice architecture, microservices communicate with each other with volumes.
+
+To get started clone this repository:
+```bash
+git clone https://github.com/SashaDance/SG-RAPL.git
+```
 
 ## Run a service
 ```bash
