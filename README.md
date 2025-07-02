@@ -26,13 +26,14 @@ Scene Graph-Driven Reasoning <br> for Action Planning of Humanoid Robot</h1>
 
 # Description
 
-This project is an open-source code base for our SG-RAPL project. [The paper is submited to Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence).
+This project is an open-source code base for our SG-RAPL project. The paper is submited to [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence).
 
 # Dataset
 
 SG-RAPL Datset can be found [here](https://drive.google.com/file/d/1yCPMaw1ctYoEcuXvhehXRHbuXYjlrLqX/view?usp=sharing).
 
 # Launch 
+
 This project follows a microservice architecture, microservices communicate with each other with volumes.
 
 To get started clone this repository:
@@ -41,6 +42,7 @@ git clone https://github.com/SashaDance/SG-RAPL.git
 ```
 
 ## Run a service
+
 ```bash
 
 docker compose up -d --build
@@ -50,17 +52,8 @@ docker compose up -d --build $SERVICE
 
 ## Test service
 
-
 ```bash
 export COMPOSE_FILE=compose.base.yaml:compose.dev.yaml
 docker compose up -d --build $SERVICE
 docker compose exec $SERVICE bash -c "poetry run pytest -vv"
-```
-
-## Bare requests
-To a service by `curl`
-```bash
-curl --location --request POST 'http://service:8000/invoke' \
-    --header 'Content-Type: application/json' \
-    --data-raw '{}'
 ```
